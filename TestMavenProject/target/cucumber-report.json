@@ -1,0 +1,77 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-10T10:48:26.057Z",
+        "line": 11,
+        "name": "Test Verify one author of the post",
+        "description": "",
+        "id": ";test-verify-one-author-of-the-post;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1994700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I perform GET operation for post",
+            "match": {
+              "location": "steps.MyStepdefs.iPerformGETOperationForPost()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1422400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Test I perform GET for the post number \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 39
+                }
+              ],
+              "location": "steps.MyStepdefs.testIPerformGETForThePostNumber(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 573300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Test I should see author name as \"typicode\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"typicode\"",
+                  "offset": 33
+                }
+              ],
+              "location": "steps.MyStepdefs.testIShouldSeeAuthorNameAs(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "  Test Verify different GET operations using REST-assured",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/abc.feature",
+    "tags": []
+  }
+]
